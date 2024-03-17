@@ -1,21 +1,18 @@
-# Use an official Node.js runtime as the base image
-FROM node:14-alpine
-
-# Set the working directory in the container
-WORKDIR /usr/src/app
-
-# Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
-
-# Install dependencies
+FROM node:19.5.0-alpine
+LABEL name="Sepid Landing"
+RUN mkdir -p /app
+WORKDIR /app
+COPY . .
 RUN npm install
 
-# Copy the rest of the application code to the working directory
-COPY . .
+ARG NEXT_SHARP_PATH
+ARG NEXT_PUBLIC_GOFTINO_TOKEN
+ARG NEXT_PUBLIC_CLARITY_TOKEN
+ARG NEXT_PUBLIC_GTM_ID
+ARG SENTRY_AUTH_TOKEN
+ARG SENTRY_DNS
+ARG NEXT_PUBLIC_SENTRY_DNS
 
-# Expose the port the app runs on
+RUN npm run build
 EXPOSE 3000
-
-# Define the command to run the app
 CMD ["npm", "start"]
-
