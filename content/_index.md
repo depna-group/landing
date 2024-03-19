@@ -1,7 +1,7 @@
 ---
 banner:
   title: گروه دپنا
-  content: ارائه دهنده‌ سرویس‌های مطمئن و برپایه تعامل
+  content: ارائه دهنده‌ سرویس‌های نرم‌افزاری مطمئن و برپایه تعامل
   image: /images/banner-art.svg
   button:
     label: "Contact Us"
