@@ -1,7 +1,7 @@
 ---
 banner:
-  title: پلتفرم سپید
-  content: نسل بعدی تولید و عرضه محتوا
+  title: گروه دپنا
+  content: ارائه دهنده‌ سرویس‌های مطمئن و برپایه تعامل
   image: /images/banner-art.svg
   button:
     label: "Contact Us"

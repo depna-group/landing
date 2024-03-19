@@ -23,20 +23,15 @@ const Base = ({
     <>
       <Head>
         {/* title */}
-        <title>
-          {config.site.title}
-        </title>
-        
+        <title>{config.site.title}</title>
+
         {/* canonical url */}
         {/* {canonical && <link rel="canonical" href={canonical} itemProp="url" />} */}
 
         {/* noindex robots */}
         {/* {noindex && <meta name="robots" content="noindex,nofollow" />} */}
         {/* meta-description */}
-        <meta
-          name="description"
-          content="نسل جدید تولید محتوا"
-        />
+        <meta name="description" content="ارائه دهنده سرویس‌های نرم‌افزاری آسان و مطمئن" />
 
         {/* author from config.json */}
         {/* <meta name="author" content={meta_author} /> */}
@@ -52,7 +47,7 @@ const Base = ({
         {/* og-description */}
         <meta
           property="og:description"
-          content="نسل جدید تولید محتوا"
+          content="ارائه دهنده سرویس‌های نرم‌افزاری آسان و مطمئن"
         />
         <meta property="og:type" content="website" />
         <meta
@@ -74,10 +69,7 @@ const Base = ({
           content={plainify(description ? description : meta_description)}
         />
         {/* og-image */}
-        <meta
-          property="og:image"
-          content={`${base_url}${image}`}
-        />
+        <meta property="og:image" content={`${base_url}${image}`} />
 
         {/* twitter-image */}
         {/* <meta
@@ -88,8 +80,8 @@ const Base = ({
       </Head>
       <Header />
       {/* main site */}
-      <Box sx={{padding:"0"}}>
-      <main>{children}</main>
+      <Box sx={{ padding: "0" }}>
+        <main>{children}</main>
       </Box>
       <Footer />
     </>

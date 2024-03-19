@@ -4,7 +4,7 @@ import menu from "@config/menu.json";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import logo from "public/images/2.png"
+import logo from "public/images/Logo - Blue - Big - V2.svg"
 import React, { useState } from "react";
 
 const Header = () => {

@@ -1,12 +1,12 @@
 { 
   "site": {
-    "title": "سپید",
+    "title": "دپنا",
     "base_url": "https://sepid.org/",
     "favicon": "images/favicon_io/favicon-32x32.png",
     "logo": "/images/logo.png",
     "logo_width": "200",
     "logo_height": "48",
-    "logo_text": "Sepid"
+    "logo_text": "Depna"
   },
 
   "settings": {
@@ -25,12 +25,12 @@
     "contact_form_action": "",
     "tag_manager_id": "",
     "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur.",
-    "copyright": "Designed and Developed By Sepid team"
+    "copyright": "Designed and Developed By Depna team"
   },
 
   "metadata": {
-    "meta_author": "سپید",
+    "meta_author": "دپنا",
     "meta_image": "images/favicon_io/favicon-32x32.png",
-    "meta_description": "نسل جدید تولید محتوا"
+    "meta_description": "شرکت خدمات نرم‌افزاری و رایانشی"
   }
 }

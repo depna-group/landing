@@ -1,10 +1,10 @@
 ---
-title: Pricing
+title: محصولات
 layout: pricing
 draft: false
 plans:
-- title: Basic Plan
-  subtitle: Best For Small Individuals
+- title: د-لینک
+  subtitle: 
   price: 49
   type: month
   features:

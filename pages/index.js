@@ -18,10 +18,17 @@ const Home = ({ frontmatter }) => {
       {/* Banner */}
       <section className="section pb-[50px]">
         <div className="container">
-          <div className="row text-center">
+          <div className="row text-start">
             <div className="mx-auto lg:col-10">
-              <h1 className="font-primary font-bold" style={{fontSize:"64px"}}>{banner.title}</h1>
-              <p className="mt-4" style={{fontSize:"18px"}}>{markdownify(banner.content)}</p>
+              <h1
+                className="font-primary font-bold"
+                style={{ fontSize: "64px" }}
+              >
+                {banner.title}
+              </h1>
+              <p className="mt-4" style={{ fontSize: "18px" }}>
+                {markdownify(banner.content)}
+              </p>
               {banner.button.enable && (
                 <Link
                   className="btn btn-primary mt-4"
@@ -31,22 +38,22 @@ const Home = ({ frontmatter }) => {
                   {banner.button.label}
                 </Link>
               )}
-              <Image
+              {/* <Image
                 className="mx-auto mt-12"
                 src={banner.image}
                 width={750}
                 height={390}
                 alt="banner image"
                 priority
-              />
+              /> */}
             </div>
           </div>
         </div>
       </section>
 
       {/* Features */}
-      <section className="section bg-theme-light">
-        <div className="container">
+      <section className="section">
+        {/* <div className="container">
           <div className="text-center">
             <h2>{markdownify(feature.title)}</h2>
           </div>
@@ -72,7 +79,7 @@ const Home = ({ frontmatter }) => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* services */}
@@ -146,12 +153,12 @@ const Home = ({ frontmatter }) => {
           )}
           {markdownify(workflow.description, "p", "mt-3")}
         </div>
-        <Image
+        {/* <Image
           src={workflow.image}
           alt="workflow image"
           width={1920}
           height={296}
-        />
+        /> */}
       </section>
 
       {/* Cta */}
